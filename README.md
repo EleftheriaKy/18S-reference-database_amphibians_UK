@@ -9,3 +9,8 @@ You can use this database for:
 BLAST searches to identify COI sequences from UK amphibians.
 
 Metabarcoding workflows involving VSEARCH, QIIME2, or similar tools
+Example usage (Bash code)
+vsearch --usearch_global query_sequences.fasta \
+  --db COI_final_filtered.fasta \
+  --id 0.9 \
+  --blast6out results.txt
